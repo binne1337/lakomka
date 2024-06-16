@@ -1,0 +1,569 @@
+@font-face {
+    font-family: "Netflix";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Netflix"),
+  url("../lbgkjb/font/Netflix-\(Bebas-Neue\).ttf");
+}
+@font-face {
+  font-family: 'Onet';
+  src: url('../lbgkjb/font/Onest-Regular.ttf') format('woff2');
+  
+}
+section {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    transform-style: inherit;
+    position: relative;
+  }
+  .block1 {
+    z-index: 2;
+    background: url("../lbgkjb/images/prozraj.png");
+  }
+  .block2::before{
+    content:url("../lbgkjb/images/fon.jpg") ;
+    top: 1; left: 1; right: 1; bottom: 1;
+    position: fixed;
+    display: block;
+    transform: translateZ(-.5px) scale(2);
+    z-index: -2;
+    background-size: cover;
+  }      
+  h1 {
+  font-size: 3.7rem;
+  position: absolute;
+  padding: 0.8rem;
+  transform: translateZ(-1px) scale(1) translate(-25%, -25%);
+  top: 49%;
+  left: 49%;
+  text-align: center;
+  }
+
+  .block1 h1 {
+  z-index: 2;
+  transform: translate(-49%, -49%);
+  
+  }
+  .block2 h1 {
+  z-index: 2;
+  transform: translateZ(-.4px) scale(1.2) translate(-39%, -39%);
+  font-family: 'Netflix';
+  }
+  *,
+  *::before,
+  *::after,
+  :root {
+  box-sizing: border-box;
+  margin: 1;
+  padding: 1; 
+  
+  }
+  
+  html {
+  height: 95%;
+  overflow: hidden; 
+  }
+  
+  body {
+  height: 106%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  font-size: 40%;
+  }
+  .nav{
+    position: absolute;
+    top: 0px;
+    padding: 70px 950px;
+    background-color: #FFFF99;
+    z-index: 9;
+    border-radius: 20px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+#block-for-slider {
+    position: absolute;
+    width: 50%;
+    margin-top: 300px;
+    margin-left: 450px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#viewport {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+    
+}
+
+.slide-img {
+    width: 100%;
+}
+
+#prev-btn, #next-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 20px;
+}
+
+#next-btn {
+    right: 20px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+}
+.besttort{
+    font-size: 3.7rem;
+    z-index: 2;
+    font-family: Netflix;
+    position: absolute;
+    left: 700px;
+    top: 200px;
+}
+.logo{
+    position: absolute;
+    top: -15px;
+    left: 730px;
+}
+.assort{
+    position: absolute;
+    font-family: Netflix;
+    font-size: 30px;
+    top: 50px;
+    left: 560px;
+    color: black;
+}
+.main{
+    position: absolute;
+    font-family: Netflix;
+    font-size: 30px;
+    top: 50px;
+    left: 430px;
+    color: black;
+}
+.construkt{
+    position: absolute;
+    font-family: Netflix;
+    font-size: 30px;
+    top: 50px;
+    left: 1160px;
+    color: black;
+}
+.contact{
+    position: absolute;
+    font-family: Netflix;
+    font-size: 30px;
+    top: 50px;
+    left: 1320px;
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.strelka{
+    position: absolute;
+    top: 870px;
+    left: 880px;
+}
+.dobosh{
+    position: absolute;
+    top: 90px;
+    left: 250px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.fontext1{
+    position: absolute;
+    top: 90px;
+    left: 900px;
+    padding: 200px 350px;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.textz1{
+    position: absolute;
+    font-family: netflix;
+    font-size: 25px;
+    top: 10px;
+    left: 15px;
+    margin: 15px;
+}
+.texto1{
+    position: absolute;
+    font-size: 20px;
+    top: 70px;
+    left: 15px;
+    margin: 15px;
+}
+.zakaz1{
+    position: absolute;
+    top: 335px;
+    left: 530px;
+    font-size: 25px;
+    font-family: Netflix;
+    background-color: #FFFF99;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.est{
+    position: absolute;
+    top: 550px;
+    left: 1000px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.fontext2{
+    position: absolute;
+    top: 550px;
+    left: 250px;
+    padding: 200px 350px;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.textz2{
+    position: absolute;
+    font-family: netflix;
+    font-size: 25px;
+    top: 10px;
+    left: 15px;
+    margin: 15px;
+}
+.texto2{
+    position: absolute;
+    font-size: 20px;
+    top: 70px;
+    left: 15px;
+    margin: 15px;
+}
+.zakaz2{
+    position: absolute;
+    top: 335px;
+    left: 530px;
+    font-size: 25px;
+    font-family: Netflix;
+    background-color: #FFFF99;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.shvar{
+    position: absolute;
+    top: 1020px;
+    left: 250px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.fontext3{
+    position: absolute;
+    top: 1020px;
+    left: 900px;
+    padding: 200px 350px;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.textz3{
+    position: absolute;
+    font-family: netflix;
+    font-size: 25px;
+    top: 10px;
+    left: 15px;
+    margin: 15px;
+}
+.texto3{
+    position: absolute;
+    font-size: 20px;
+    top: 70px;
+    left: 15px;
+    margin: 15px;
+}
+.zakaz3{
+    position: absolute;
+    top: 335px;
+    left: 530px;
+    font-size: 25px;
+    font-family: Netflix;
+    background-color: #FFFF99;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.ches{
+    position: absolute;
+    top: 1490px;
+    left: 1000px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.fontext4{
+    position: absolute;
+    top: 1490px;
+    left: 250px;
+    padding: 200px 350px;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.textz4{
+    position: absolute;
+    font-family: netflix;
+    font-size: 25px;
+    top: 10px;
+    left: 15px;
+    margin: 15px;
+}
+.texto4{
+    position: absolute;
+    font-size: 20px;
+    top: 70px;
+    left: 15px;
+    margin: 15px;
+}
+.zakaz4{
+    position: absolute;
+    top: 335px;
+    left: 530px;
+    font-size: 25px;
+    font-family: Netflix;
+    background-color: #FFFF99;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.block3 {
+    position: absolute;
+    z-index: 2;
+    background: url("../lbgkjb/images/prozraj.png");
+    top: 2900px;
+  }
+  body {
+    font-family: netflix;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .container {
+    position: relative;
+    top: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid #000000;
+    background-color: #fff;
+    border-radius: 10px;
+    background-image: url("../lbgkjb/images/sladostifon.jpg");
+    
+  }
+  
+  .reviews-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .review-form {
+    width: 45%;
+    font-size: 25px;
+  }
+  
+  .reviews-list {
+    width: 45%;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .review {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .review h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .review p {
+    margin-bottom: 0;
+    color: #666;
+  }
+  
+  .review-form label,
+  .review-form textarea,
+  .review-form input[type="text"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .review-form button {
+    background-color: #FFFF99;
+    font-family: netflix;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .review-form button:hover {
+    background-color: #fafa70;
+  }
+  
+  .review-form textarea {
+    resize: vertical;
+  }
+  .footer {
+    position: relative;
+    top: 500px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content div {
+    width: 50%;
+  }
+  
+  .footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .grid-container {
+    width: 500px;
+    height: auto;
+    position: relative;
+    font-family: onet;
+    top: 220px;
+    left: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 30px;
+    grid-gap: 10px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 500px ;
+    height: 500px;
+     /* измените эту ширину по вашему усмотрению */
+    margin: auto; /* чтобы выровнять карточки по центру */
+    
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .grid-item h3 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+  .grid-item p {
+    margin: 10px 0;
+    color: #666666;
+  }
+  
+  .grid-item button {
+    padding: 10px 20px;
+    background-color: #FFFF99;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .grid-item button:hover {
+    background-color: #fafa70;
+  }
+  .map{
+    position: absolute;
+    left: 1200px;
+    top: 50px;
+  }

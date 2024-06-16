@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "Netflix";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Netflix"),
+  url("../lbgkjb/font/Netflix-\(Bebas-Neue\).ttf");
+}
+@font-face {
+  font-family: 'Onet';
+  src: url('../lbgkjb/font/Onest-Regular.ttf') format('woff2');
+  
+}
+section {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    transform-style: inherit;
+    position: relative;
+  }
+  .block1 {
+    z-index: 2;
+    background: url("../lbgkjb/images/prozraj.png");
+  }
+  .block2::before{
+    content:url("../lbgkjb/images/fon.jpg") ;
+    top: 1; left: 1; right: 1; bottom: 1;
+    position: fixed;
+    display: block;
+    transform: translateZ(-.5px) scale(2);
+    z-index: -2;
+    background-size: cover;
+  }      
+  h1 {
+  font-size: 3.7rem;
+  position: absolute;
+  padding: 0.8rem;
+  transform: translateZ(-1px) scale(1) translate(-25%, -25%);
+  top: 49%;
+  left: 49%;
+  text-align: center;
+  }
+
+  .block1 h1 {
+  z-index: 2;
+  transform: translate(-49%, -49%);
+  
+  }
+  .block2 h1 {
+  z-index: 2;
+  transform: translateZ(-.4px) scale(1.2) translate(-39%, -39%);
+  font-family: 'Netflix';
+  }
+  *,
+  *::before,
+  *::after,
+  :root {
+  box-sizing: border-box;
+  margin: 1;
+  padding: 1; 
+  
+  }
+  
+  html {
+  height: 95%;
+  overflow: hidden; 
+  }
+  
+  body {
+  height: 106%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  font-size: 40%;
+  }
+  .nav{
+    position: absolute;
+    top: 0px;
+    padding: 70px 950px;
+    background-color: #FFFF99;
+    z-index: 9;
+    border-radius: 20px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    position: absolute;
+    top: -15px;
+    left: 730px;
+}
+.assort{
+    position: absolute;
+    font-family: Netflix;
+    font-size: 30px;
+    top: 50px;
+    left: 560px;
+    color: black;
+}
+.main{
+    position: absolute;
+    font-family: Netflix;
+    font-size: 30px;
+    top: 50px;
+    left: 430px;
+    color: black;
+}
+.construkt{
+    position: absolute;
+    font-family: Netflix;
+    font-size: 30px;
+    top: 50px;
+    left: 1160px;
+    color: black;
+}
+.contact{
+    position: absolute;
+    font-family: Netflix;
+    font-size: 30px;
+    top: 50px;
+    left: 1320px;
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.contact-info{
+    position: absolute;
+    font-size: 50px;
+    font-family: netflix;
+    top: 200px;
+    left: 430px;
+}
+/* .contacttext{
+    position: absolute;
+    font-size: 30px;
+    font-family: netflix;
+    top: 300px;
+    left: 430px;
+} */
+.dobosha{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+.texta{
+    position: absolute;
+    top: 250px;
+    left: 850px;
+    font-size: 30px;
+    font-family: netflix;
+}
+.texta2{
+    position: absolute;
+    top: 350px;
+    left: 850px;
+    font-size: 25px;
+    font-family: netflix;
+}
+.order{
+    position: absolute;
+    top: 700px;
+    left: 200px;
+    font-size: 28px;
+    font-family: netflix;
+    
+}
+.button {
+    position: absolute;
+    top: 10px;
+    left: 1050px;
+    font-size: 25px;
+    font-family: Netflix, sans-serif;
+    background-color: #FFFF99;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #FFCC00;
+  }
+.contacttext {position: relative; max-width: 600px; margin: auto; padding: 20px; font-size: 20px; top: 100px;}
+  .contact-form { margin-top: 20px; }
+  label { display: block; margin-top: 10px; }
+  input, textarea { width: 100%; padding: 10px; margin-top: 5px; }
+  button { padding: 10px 20px; margin-top: 10px; }
+  .social-links { margin-top: 20px; }
+  .social-links a { margin-right: 10px; }

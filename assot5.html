@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+<style>form {display: flex; flex-direction: row;}label {flex: 1;}input, textarea {flex: 2;}</style>
+<header>
+    <header class="nav">
+      <div class="assort">
+        <a href="assort.html">Ассортимент</a>
+      </div>
+      <div class="main">
+        <a href="index.html">Главная</a>
+      </div>
+      <div class="construkt">
+        <a href="tortik.html">Собери сам</a>
+      </div>
+      <div class="contact">
+        <a href="contact.html">Контакт</a>
+      </div>
+      <div class="logo">
+        <img src="images/logo4.png" width="400" height="150">
+      </div>
+    </header>
+  </header>
+<body>
+    <section class="block1">
+        <div class="dobosha">
+        <img src="images/Tovar/krasb.jpg" width="600px" height="400">
+        </div>
+        <div class="texta">
+          «Красный бархат» из Америки, найденный в кулинарной книге 1872 года
+        </div>
+        <div class="texta2">
+          Своей популярностью и известностью в мире этот десерт<br> 
+          обязан необычному, яркому оттенку. Насыщенная алая окраска <br>
+          коржей появилась неслучайно. Изначально его готовили с использованием <br>
+          коричневого сахара, который, при смешивании с пахтой, уксусом <br>
+          и какао порошком делал цвет теста грязновато-ржавым.<br>
+          В период экономической нестабильности и дефицита продуктов <br>
+          кондитеры решили «подкрасить» непривлекательное тесто при помощи <br>
+          свекольной массы. Результат эксперимента превзошёл все ожидания. Так популярный торт стал красным.
+        </div>
+        <div class="order">
+          Оформление заказа
+    <form action="process_order.php" method="post">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="phone">Номер телефона:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="address">Адрес доставки:</label><br>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        <input type="hidden" name="source" value="assot5.html"> <!-- Здесь указывается источник заказа -->
+
+        <button class="button" onclick="document.getElementById('order-form').submit();">Оформить заказ</button>
+
+    </form>
+        </div>
+    </section>
+    <section class="block2"></section>
+</script>
+</body>
+</html>

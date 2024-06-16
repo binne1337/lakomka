@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торт Конструктор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo2">
+        <a href="index.html"><img src="images/logo4.png" width="400" height="150"></a>
+    </div>
+    <div class="container">
+        <h1>Создайте свой торт</h1>
+        <!-- Форма выбора параметров торта -->
+        <form action="submit_order.php" method="post">
+                    <!-- Выбор начинки -->
+        <label for="filling">Выберите начинку:</label>
+        <select id="filling" name="filling">
+            <option value="">Выберите начинку</option>
+            <option value="choco">Шоколадная</option>
+            <option value="vanil">Ванильная</option>
+            <option value="caramel">Карамельная</option>
+            
+        </select>
+
+        <!-- Выбор покрытия -->
+        <label for="icing">Выберите покрытие:</label>
+        <select id="icing" name="icing">
+            <option value="">Выберите покрытие</option>
+            <option value="choco">Шоколадное</option>
+            <option value="krem">Кремовое</option>
+            <option value="glas">Гляссаж</option>
+        </select>
+
+        <!-- Выбор украшений -->
+        <label for="decorations">Выберите украшения:</label>
+        <select id="decorations" name="decorations">
+            <option value="">Выберите украшения</option>
+            <option value="flow">Цветы</option>
+            <option value="club">Клубника</option>
+            <option value="choco">Шоколадные стружки</option>
+        </select>
+
+        </form>
+        
+    
+            <!-- Поле для ввода надписи -->
+            <label for="message">Введите надпись:</label>
+            <input type="text" id="message" name="message" placeholder="Поздравляем!">
+    
+            <!-- Предварительный просмотр торта -->
+            <div id="cakePreview" class="cake-preview"></div>
+    
+            <!-- Поле для ввода контактной информации -->
+            <div class="contact-info">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="phone">Особые пожелания клиента:</label>
+                <input type="text" id="text" name="text" required>
+            </div>
+
+    
+            <!-- Кнопка для отправки заказа -->
+            <button type="submit">Заказать</button>
+        </form>
+    </div>
+    
+
+    <script src="scripts2.js"></script>
+</body>
+</html>
