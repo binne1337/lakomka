@@ -3,11 +3,11 @@
   font-style: normal;
   font-weight: 400;
   src: local("Netflix"),
-  url("../lbgkjb/font/Netflix-\(Bebas-Neue\).ttf");
+  url("../lakomka/font/Netflix-\(Bebas-Neue\).ttf");
 }
 @font-face {
   font-family: 'Onet';
-  src: url('../lbgkjb/font/Onest-Regular.ttf') format('woff2');
+  src: url('../lakomka/font/Onest-Regular.ttf') format('woff2');
   
 }
 section {
@@ -416,7 +416,7 @@ a{
     border: 2px solid #000000;
     background-color: #fff;
     border-radius: 10px;
-    background-image: url("../lbgkjb/images/sladostifon.jpg");
+    background-image: url("../lakomka/images/sladostifon.jpg");
     
   }
   
